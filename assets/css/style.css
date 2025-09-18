@@ -1,0 +1,438 @@
+
+:root{
+  --header:#0A314F;
+  --footer:#003768;
+  --accent:#5AC8FA;
+  --radius:16px;
+  --font:'Inter','Be Vietnam Pro',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{display:flex;flex-direction:column;font-family:var(--font);color:#0f172a}
+main{flex:1}
+
+/* Top bar */
+.topbar{background:var(--header);color:#fff;padding:.35rem .75rem}
+.topbar .container{display:flex;align-items:center;justify-content:space-between;gap:.75rem}
+.topbar .brand{display:flex;align-items:center;gap:.5rem}
+.topbar .brand .txt{font-weight:600;letter-spacing:.2px}
+
+/* Banner */
+.hero{position:relative}
+.hero .banner{width:100%;display:block}
+
+/* Navbar under banner */
+.navbar-portal{background:var(--header)}
+.navbar-portal .navbar-collapse{justify-content:center}
+.navbar-portal .nav-link{color:#fff!important;opacity:.95;padding:.55rem .85rem}
+.navbar-portal .nav-link:hover{opacity:1;text-decoration:underline}
+.navbar-portal .nav-link.active{font-weight:600;position:relative}
+.navbar-portal .nav-link.active:after{content:"";position:absolute;left:.7rem;right:.7rem;bottom:.3rem;height:3px;background:var(--accent);border-radius:2px}
+
+/* Generic */
+.section{padding:2.2rem 0}
+.small-muted{color:#64748b}
+.card{border-radius:var(--radius);border:1px solid #e5e7eb;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.08)}
+
+/* Edge-to-edge container */
+.container-edge{max-width:100%;padding-left:0;padding-right:0}
+.row-edge{--bs-gutter-x:0}
+
+/* News */
+.list-border{border:1px solid #dbe1ea;border-radius:12px;overflow:hidden}
+#newsSidebar .list-group-item{display:flex;gap:.5rem;align-items:center}
+#newsSidebar .list-group-item .dot{width:8px;height:8px;background:#0d6efd;border-radius:50%}
+.news-table .row-item{border-bottom:1px solid #eef2f7;padding:.65rem .75rem}
+.news-table .row-item:last-child{border-bottom:none}
+.news-table .title{color:#0a2463;text-decoration:none}
+.news-table .title:hover{text-decoration:underline}
+
+/* Certificates & Timetable */
+.page-head{display:flex;gap:.75rem;align-items:flex-end;justify-content:space-between;margin-bottom:.8rem;border-bottom:1px solid #e5e7eb;padding-bottom:.45rem}
+.page-head .filters{display:flex;gap:.45rem;align-items:center;flex-wrap:wrap}
+.page-head .filters .form-control,.page-head .filters .form-select{height:38px;padding:.25rem .6rem}
+.table-rounded{border-radius:12px;overflow:hidden;border:1px solid #e5e7eb}
+.page-foot{display:flex;justify-content:space-between;align-items:center;margin-top:.6rem;border-top:1px solid #e5e7eb;padding-top:.6rem}
+
+/* Album grid */
+.album-grid{display:grid;gap:.75rem}
+@media(min-width:576px){.album-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:768px){.album-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1200px){.album-grid{grid-template-columns:repeat(4,1fr)}}
+.album-grid .ph{position:relative;overflow:hidden;border-radius:14px;border:1px solid #e5e7eb}
+.album-grid img{width:100%;aspect-ratio:3/2;object-fit:cover;transition:transform .35s ease}
+.album-grid .ph:hover img{transform:scale(1.05)}
+
+/* Contact */
+.map-wrap{height:100%;min-height:480px;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden}
+
+/* Footer */
+.footer-portal{background:var(--footer);color:#e9f1fb}
+.footer-portal a{color:#e9f1fb;text-decoration:none}
+.footer-portal a:hover{text-decoration:underline}
+.footer-portal .footer-logo{height:118px;width:auto}
+.footer-portal .school-info{font-size:1.04rem;line-height:1.5}
+.footer-portal .section-title{font-size:1.08rem;font-weight:600}
+.footer-portal .item{font-size:1rem}
+.footer-compact .container{padding-top:1.2rem;padding-bottom:1rem}
+@media(min-width:992px){
+  .footer-portal .school-info{font-size:1.08rem}
+  .footer-portal .section-title{font-size:1.12rem}
+  .footer-portal .item{font-size:1.02rem}
+}
+
+/* === Large Top Bar (precise sizes) === */
+.topbar{
+  background:#0A314F;
+  padding: 14px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+.topbar .brand-logo{ max-height:66px; }
+.topbar .brand-title{ font-size:1.55rem; font-weight:700; letter-spacing:.2px; }
+
+@media (max-width: 992px){
+  .topbar{ padding:10px 0; }
+  .topbar .brand-logo{ max-height:56px; }
+  .topbar .brand-title{ font-size:1.35rem; }
+}
+@media (max-width: 576px){
+  .topbar .brand-logo{ max-height:46px; }
+  .topbar .brand-title{ font-size:1.10rem; }
+}
+
+/* === Footer normalize: Kết nối thẳng hàng như Liên kết nhanh === */
+footer, .footer{}
+footer .widget, .footer .widget{ margin-bottom: 1rem; }
+footer .widget ul, .footer .widget ul{ list-style:none; padding-left:0; margin:0; }
+footer .widget ul li, .footer .widget ul li{ margin:6px 0; }
+footer .widget a, .footer .widget a{ text-decoration:none; }
+
+/* Đảm bảo "Kết nối" hiển thị dạng cột danh sách dọc */
+footer .connect a, .footer .connect a{ display:block; margin:6px 0; }
+footer .connect img, .footer .connect img{ vertical-align:middle; margin-right:8px; }
+
+/* Force footer "Kết nối" links vertical like "Liên kết nhanh" */
+footer .widget ul{ list-style:none; padding-left:0; }
+footer .widget ul li{ margin:6px 0; }
+footer .widget ul li a{ display:inline-block; text-decoration:none; }
+
+/* Footer: unify "Kết nối" with "Liên kết nhanh" */
+footer .widget ul{list-style:none; padding-left:0; margin:0;}
+footer .widget ul li{margin:6px 0;}
+footer .widget ul li a{text-decoration:none; display:inline-block;}
+
+/* === Footer: normalize "Kết nối" to vertical list identical to "Liên kết nhanh" === */
+footer .widget ul{ list-style:none; padding-left:0; margin:0; }
+footer .widget ul li{ margin:6px 0; }
+footer .widget ul li a{ display:inline-block; text-decoration:none; }
+
+
+/* === Sonadezi: Header size & typography (FINAL) === */
+.top-bar, .header, #header {
+  min-height: 64px;
+  background: #0A314F;
+}
+.header .brand, .top-bar .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header .brand img#shield-logo, .top-bar .brand img#shield-logo {
+  height: 48px;
+  width: auto;
+}
+.header .brand .title, .top-bar .brand .title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+}
+/* Footer: align 'Kết nối' like 'Liên kết nhanh' */
+footer .footer-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+footer .footer-columns .column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer .footer-columns .column a {
+  text-decoration: none;
+}
+/* Ensure Kết nối is left-aligned and consistent */
+footer .footer-columns .column.connect,
+footer .footer-columns .column.quick-links {
+  text-align: left;
+}
+footer .footer-columns .column.connect ul li,
+footer .footer-columns .column.quick-links ul li {
+  margin: 6px 0;
+}
+/* Remove any IGC badge row under 'Kết nối' if styled */
+footer .igc-row, footer .igc-badge { display: none !important; }
+
+/* Custom adjustments for logo and brand text */
+.topbar img { height: 32px; width: auto; }
+.topbar .brand .txt { font-size: 1.25rem; }
+
+/* Second update: make logo and brand text bigger */
+.topbar img { height: 40px; width: auto; }
+.topbar .brand .txt { font-size: 1.5rem; }
+
+/* Third update: even bigger logo and brand text */
+.topbar img { height: 48px; width: auto; }
+.topbar .brand .txt { font-size: 1.75rem; }
+
+
+/* ===== UI Polish for Certificates & Timetable pages (no change to the table area) ===== */
+body[data-page="certificates"] .container-fluid,
+body[data-page="timetable"] .container-fluid{
+  max-width: 1200px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body[data-page="certificates"] .section,
+body[data-page="timetable"] .section{
+  padding-top: 1.25rem;
+}
+
+/* Page header as a clean card */
+.page-head{
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: .9rem 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,.05);
+}
+/* Remove the previous dividing line if any */
+.page-head{ border-bottom: none !important; }
+
+/* Title tweaks */
+.page-head .title-wrap .h4{
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: .2px;
+  margin: 0 0 .25rem 0;
+}
+.page-head .small-muted{ color: #64748b; }
+
+/* Filters: soft pill controls */
+.page-head .filters{ gap: .6rem; }
+.page-head .filters .form-control,
+.page-head .filters .form-select{
+  height: 42px;
+  padding: .35rem .9rem;
+  border-radius: 999px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  box-shadow: inset 0 0 0 rgba(0,0,0,0);
+  transition: box-shadow .15s ease, border-color .15s ease, background .15s ease;
+}
+.page-head .filters .form-control:focus,
+.page-head .filters .form-select:focus{
+  background: #fff;
+  border-color: #94a3b8;
+  box-shadow: 0 0 0 4px rgba(90,200,250,.25); /* uses --accent tone */
+  outline: none;
+}
+
+/* Footer info line under the table (keep table itself unchanged) */
+.page-foot{
+  color: #475569;
+  margin-top: .8rem;
+}
+.page-foot .small-muted{ color: #64748b; }
+
+
+
+/* ===== Refined filter boxes (Certificates & Timetable) ===== */
+.page-head .filters .form-control,
+.page-head .filters .form-select {
+  height: 38px;
+  padding: .25rem .75rem;
+  border-radius: 10px; /* more subtle than full pill */
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  font-size: .95rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  transition: all .2s ease-in-out;
+}
+
+.page-head .filters .form-control:focus,
+.page-head .filters .form-select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(90,200,250,.25);
+  outline: none;
+}
+
+/* Align inputs neatly in a row on larger screens */
+@media (min-width: 768px){
+  body[data-page="certificates"] .page-head .filters,
+  body[data-page="timetable"] .page-head .filters{
+    flex-wrap: nowrap;
+  }
+  body[data-page="certificates"] .page-head .filters .form-control,
+  body[data-page="timetable"] .page-head .filters .form-select{
+    flex: 1;
+  }
+}
+
+
+
+/* ===== Compact filter blocks for Certificates & Timetable ===== */
+@media (min-width: 768px){
+  body[data-page="certificates"] .page-head .filters,
+  body[data-page="timetable"] .page-head .filters{
+    margin-left: auto;
+    width: 340px;               /* fixed, neat column on desktop */
+  }
+}
+@media (min-width: 1200px){
+  body[data-page="certificates"] .page-head .filters,
+  body[data-page="timetable"] .page-head .filters{
+    width: 360px;               /* a bit wider on large screens */
+  }
+}
+/* Stack inputs vertically with tight gap */
+.page-head .filters{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: .5rem;                   /* tighter than before */
+}
+
+/* Compact pill fields */
+.page-head .filters .form-control,
+.page-head .filters .form-select{
+  height: 36px;                 /* was ~42px */
+  padding: .3rem .75rem;
+  border-radius: 12px;          /* smaller radius for tidy look */
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  box-shadow: inset 0 0 0 rgba(0,0,0,0);
+  font-size: .95rem;
+  transition: box-shadow .12s ease, border-color .12s ease, background .12s ease, transform .06s ease;
+}
+.page-head .filters .form-control::placeholder{ color:#94a3b8; }
+
+/* Hover & focus states (subtle) */
+.page-head .filters .form-control:hover,
+.page-head .filters .form-select:hover{
+  border-color:#cbd5e1;
+  background:#f9fbfd;
+}
+.page-head .filters .form-control:focus,
+.page-head .filters .form-select:focus{
+  background:#fff;
+  border-color:#94a3b8;
+  box-shadow: 0 0 0 3px rgba(90,200,250,.22);
+  outline:none;
+}
+
+/* Mobile: full width, comfortable touch target */
+@media (max-width: 767.98px){
+  body[data-page="certificates"] .page-head .filters,
+  body[data-page="timetable"] .page-head .filters{
+    width: 100%;
+  }
+  .page-head .filters .form-control,
+  .page-head .filters .form-select{
+    height: 40px;               /* a bit taller on mobile for tap comfort */
+  }
+}
+
+/* Keep the table block untouched */
+
+
+
+/* ===== Clean pass for Certificates & Timetable pages ===== */
+
+/* 1) Tighter overall vertical rhythm */
+body[data-page="certificates"] .section,
+body[data-page="timetable"] .section{
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+/* 2) Use a simple two-column grid for the page head:
+      - Left: title + subtitle
+      - Right: compact filters
+   Stack on mobile. */
+.page-head{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .8rem;
+}
+@media (min-width: 992px){
+  .page-head{
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+}
+
+/* 3) Title spacing and weights for clarity */
+.page-head .title-wrap{ margin: 0; }
+.page-head .title-wrap .h4{
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+}
+.page-head .small-muted{
+  margin-top: .15rem;
+  color: #64748b;
+}
+
+/* 4) Filters: make column tidy, balanced gap; harmonize radius and height */
+.page-head .filters{
+  display: flex;
+  flex-direction: column;
+  gap: .45rem;
+}
+.page-head .filters .form-control,
+.page-head .filters .form-select{
+  height: 36px;
+  padding: .3rem .75rem;
+  border-radius: 10px;      /* slightly smaller for clean feel */
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  font-size: .95rem;
+}
+.page-head .filters .form-control::placeholder{ color:#94a3b8; }
+
+/* Desktop width for the filter column (kept modest) */
+@media (min-width: 992px){
+  body[data-page="certificates"] .page-head .filters,
+  body[data-page="timetable"] .page-head .filters{
+    width: 340px;
+    margin-left: 2rem;      /* breathing room from the title block */
+  }
+}
+@media (min-width: 1200px){
+  body[data-page="certificates"] .page-head .filters,
+  body[data-page="timetable"] .page-head .filters{
+    width: 360px;
+  }
+}
+
+/* 5) Visual separation above the table without touching table styles */
+body[data-page="certificates"] .table-responsive,
+body[data-page="timetable"] .table-responsive{
+  margin-top: .5rem;
+}
+
+/* 6) Footer under table: lighter tone and spacing */
+.page-foot{
+  color: #475569;
+  margin-top: .75rem;
+}
+
+/* 7) Keep tables untouched per prior constraint */
+

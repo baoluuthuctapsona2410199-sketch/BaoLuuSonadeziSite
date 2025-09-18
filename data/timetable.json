@@ -1,0 +1,115 @@
+{
+  "timetables": [
+    {
+      "class": "S6CNTT2",
+      "day": "Thứ 2",
+      "date": "2025-09-15",
+      "start": "07:30",
+      "end": "09:30",
+      "subject": "Lập trình Web 1",
+      "room": "A1.1",
+      "teacher": "Nguyễn Hoàng Quang Minh"
+    },
+    {
+      "class": "S5CNTT1",
+      "day": "Thứ 2",
+      "date": "2025-09-15",
+      "start": "09:45",
+      "end": "11:15",
+      "subject": "Cơ sở dữ liệu",
+      "room": "A1.6",
+      "teacher": "Trần Hải Đăng"
+    },
+    {
+      "class": "K20CNTT1",
+      "day": "Thứ 3",
+      "date": "2025-09-16",
+      "start": "13:00",
+      "end": "15:00",
+      "subject": "Mạng máy tính",
+      "room": "A5.1",
+      "teacher": "Lê Anh Tuấn"
+    },
+    {
+      "class": "K18CNTT3",
+      "day": "Thứ 4",
+      "date": "2025-09-17",
+      "start": "07:30",
+      "end": "09:00",
+      "subject": "Kỹ năng mềm",
+      "room": "B1.1",
+      "teacher": "Phạm Thu Nguyên"
+    },
+    {
+      "class": "S4CNTT1",
+      "day": "Thứ 5",
+      "date": "2025-09-18",
+      "start": "09:15",
+      "end": "11:15",
+      "subject": "Toán rời rạc",
+      "room": "A1.7",
+      "teacher": "Vũ Minh Triết"
+    },
+    {
+      "class": "K20CNTT2",
+      "day": "Thứ 6",
+      "date": "2025-09-19",
+      "start": "13:30",
+      "end": "16:00",
+      "subject": "Thực hành Web 1",
+      "room": "A5.2",
+      "teacher": "Nguyễn Quốc Trọng"
+    },
+
+    {
+      "class": "S4QTDN3",
+      "day": "Thứ 2",
+      "date": "2025-09-15",
+      "start": "13:30",
+      "end": "15:30",
+      "subject": "Nguyên lý Marketing",
+      "room": "C2.5",
+      "teacher": "Đỗ Mai Thành"
+    },
+    {
+      "class": "S4QTDN1",
+      "day": "Thứ 3",
+      "date": "2025-09-16",
+      "start": "07:30",
+      "end": "09:00",
+      "subject": "Kinh tế vi mô",
+      "room": "C2.4",
+      "teacher": "Phan Tâm Quang"
+    },
+    {
+      "class": "K19QTDN2",
+      "day": "Thứ 4",
+      "date": "2025-09-17",
+      "start": "09:15",
+      "end": "11:15",
+      "subject": "Quản trị học",
+      "room": "C1.5",
+      "teacher": "Lưu Bình Trách"
+    },
+    {
+      "class": "K21QTDN1",
+      "day": "Thứ 5",
+      "date": "2025-09-18",
+      "start": "13:30",
+      "end": "15:00",
+      "subject": "Tiếng Anh thương mại",
+      "room": "C2.4",
+      "teacher": "Lê My Trang"
+    },
+    {
+      "class": "K20QTDN3",
+      "day": "Thứ 6",
+      "date": "2025-09-19",
+      "start": "07:30",
+      "end": "09:30",
+      "subject": "Kỹ năng thuyết trình",
+      "room": "C2.1",
+      "teacher": "Đỗ Mai Thành"
+    }
+  ]
+}

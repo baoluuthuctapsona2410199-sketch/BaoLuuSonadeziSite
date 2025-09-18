@@ -1,0 +1,81 @@
+{
+  "certificates": [
+    {
+      "code": "SDZ-2024-000092",
+      "fullname": "Lưu Thái Bảo",
+      "dob": "2006-01-12",
+      "major": "Tin học ứng dụng",
+      "program": "Cao đẳng liên thông",
+      "course": "S3THUDLT2",
+      "rank": "Khá",
+      "grad_year": "2024",
+      "status": "Đã cấp"
+    },
+    {
+      "code": "SDZ-2023-000123",
+      "fullname": "Nguyễn Văn Định",
+      "dob": "2005-05-12",
+      "major": "Công nghệ thông tin",
+      "program": "Trung cấp",
+      "course": "S2CNTT1",
+      "rank": "Giỏi",
+      "grad_year": "2023",
+      "status": "Đã cấp"
+    },
+    {
+      "code": "SDZ-2023-000456",
+      "fullname": "Trần Thị Bích Ngọc",
+      "dob": "2005-11-03",
+      "major": "Quản trị kinh doanh",
+      "program": "Cao đẳng chính quy",
+      "course": "K22QTKD3",
+      "rank": "Khá",
+      "grad_year": "2023",
+      "status": "Đã cấp"
+    },
+    {
+      "code": "SDZ-2022-000789",
+      "fullname": "Lê Minh Chung",
+      "dob": "2004-07-21",
+      "major": "Kế toán",
+      "program": "Cao đẳng chính quy",
+      "course": "K19KT",
+      "rank": "Giỏi",
+      "grad_year": "2022",
+      "status": "Đã cấp"
+    },
+    {
+      "code": "SDZ-2024-000015",
+      "fullname": "Phạm Quốc Danh",
+      "dob": "2006-02-18",
+      "major": "Thương mại điện tử",
+      "program": "Cao đẳng chính quy",
+      "course": "K22TMDT",
+      "rank": "Khá",
+      "grad_year": "2024",
+      "status": "Đã cấp"
+    },
+    {
+      "code": "SDZ-2021-000321",
+      "fullname": "Võ Hải Phú",
+      "dob": "2003-09-09",
+      "major": "Truyền thông đa phương tiện",
+      "program": "Trung cấp",
+      "course": "S2TTDPT2",
+      "rank": "Trung bình",
+      "grad_year": "2021",
+      "status": "Đã cấp"
+    },
+    {
+      "code": "SDZ-2023-000654",
+      "fullname": "Đặng Thu Thuỳ Linh",
+      "dob": "2005-12-30",
+      "major": "Ngôn ngữ Tiếng Anh",
+      "program": "Cao đẳng chính quy",
+      "course": "K21AV1",
+      "rank": "Khá",
+      "grad_year": "2023",
+      "status": "Đã cấp"
+    }
+  ]
+}
